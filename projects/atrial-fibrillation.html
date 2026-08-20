@@ -12,12 +12,19 @@
         <h1><a href="/">Merrill Datwyler</a></h1>
         <div id="nav-container"></div>
         <script>
-          fetch('../nav.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById('nav-container').innerHTML = data;
-            });
-        </script>
+			fetch('nav.html')
+			.then(response => response.text())
+			.then(data => {
+				const nav = document.getElementById('nav-container');
+				nav.innerHTML = data;
+				const currentPage = window.location.pathname;
+				nav.querySelectorAll('a').forEach(link => {
+					if (link.pathname === currentPage) {
+						link.classList.add('active');
+					}
+				});
+			});
+		</script>
       </aside>
       <main>
         <h2>Atrial Fibrillation</h2>
