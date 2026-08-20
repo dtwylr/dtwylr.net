@@ -12,7 +12,7 @@
         <h1><a href="/">Merrill Datwyler</a></h1>
         <div id="nav-container"></div>
         <script>
-			fetch('nav.html')
+			fetch('../nav.html')
 			.then(response => response.text())
 			.then(data => {
 				const nav = document.getElementById('nav-container');
@@ -27,7 +27,7 @@
 		</script>
       </aside>
       <main>
-        <h2>Beat Signals</h2>
+        <h3>Beat Signals</h3>
         	<img src="../assets/projects/beat-signals.png" alt="Spectrum representation of beat signals" />
       </main>
     </div>

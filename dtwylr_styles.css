@@ -106,6 +106,7 @@ a:hover {
 }
 
 #nav-container a.active {
+  color: #555;
   font-weight: bold;
 }
 
