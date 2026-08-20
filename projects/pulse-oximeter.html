@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Merrill Datwyler</title>
+    <link rel="stylesheet" href="../dtwylr_styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside>
+        <h1><a href="/">Merrill Datwyler</a></h1>
+        <div id="nav-container"></div>
+        <script>
+          fetch('../nav.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('nav-container').innerHTML = data;
+            });
+        </script>
+      </aside>
+      <main>
+        <h2>Pulse Oximeter</h2>
+        	<img src="../assets/projects/pulse-oximeter.png" alt="Breadboard pulse oximeter" />
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2026 Merrill Datwyler</p>
+    </footer>
+  </body>
+</html>
