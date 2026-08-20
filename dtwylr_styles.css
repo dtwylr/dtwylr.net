@@ -105,6 +105,11 @@ a:hover {
   background-color: #444;
 }
 
+#nav-container a.active {
+  color: #111;
+  font-weight: bold;
+}
+
 /* Blockquotes */
 blockquote {
   font-size: 1em;
