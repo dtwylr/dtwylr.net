@@ -18,10 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: "Hoefler Text", Georgia, "Times New Roman", serif;
   font-size: 1.55em;
+  font-family: "Hoefler Text", Georgia, "Times New Roman", serif;
   line-height: 1.3;
-  margin: 0 0 2rem;
+  text-align: left;
 }
 
 h2 {
@@ -56,14 +56,20 @@ aside h1 {
 }
 
 /* Links */
-a,
-a:visited {
-  color: inherit;
+a {
+  color: #111;
   text-decoration: none;
+  border-color: #888;
+  border-width: 0 0 1px 0;
+  border-style: none none solid none;
+  padding: 3px 0px 2px 0px;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
+  background-color: #444;
+  border-color: #444;
 }
 
 /* Sidebar nav links: no borders, uppercase */
@@ -82,8 +88,12 @@ a:hover {
 }
 
 #nav-container a.active {
-  color: #111;
+  color: #555;
   font-weight: bold;
+}
+
+#nav-container ul {
+  list-style-type: none;
 }
 
 /* Blockquotes */
